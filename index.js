@@ -52,18 +52,101 @@ console.log("Hello");
 // console.log("After unshift operation",numbers);
 
 
+
+
+// slice function
+// returns a new array from the selected indexes. It will not manipluate the existing array.
+// startIndex : element at this index will be included in the new array/
+// endIndex : elements before this index will be included
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// // const newArr = arr.slice(startIndex, endIndex);
+// const newArr = arr.slice(1, 4); // [2, 3, 4]
+// console.log(newArr, arr);
+
+// const arr = [ 2, 4, 5, 6, 7, 8]
+
+
+// 1 = 0 = -6
+// 2 = 1 = -5
+// 3 = 2 = -4
+// 4 = 3 = -3
+// 5 = 4 = -2
+// 6 = 5 = -1
+
+//  Question  : Array given is arr = [1, 2, 3, 4, 5, 6];. Please write down the slice function which returns a new array as [2, 3, 4]. Notes :: Indexes should be
+
+// const newArr2 = arr.slice(-5, -2);
+// console.log(newArr2);
+
+// [6]
+
+
+
+//  SOME AND EVERY FUNCTIONS :::::::::::::::::;
+
+var arr = [ 2,  4,  6];
+
+//some & every = Both these functions takes in a condition and checks if all the elements in the array is satisfying that condition or not. they always returns you boolean value which means true or false.  
+
+// some :  In this case, if even one element satisfies the condition then true will be returned.
+// every : All and every element should satisfy the condition
+
+// => ::::  arrow function
+
+const value = arr.some(n => n%2 == 0);
+const value2 = arr.every(n => n%2 == 0);
+console.log(value, value2);
+
+
+//regular 
+// function functionName () {
+//     console.log("hello");
+// }
+// functionName()
+
+// // named function, function expression
+// const a = function (){
+//     console.log("A");
+// }
+// // a()
+
+// // arrow function
+// const b = (cb) =>{
+//     console.log("heyy World");
+//     cb();
+// } 
+
+// b(functionName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //LOOPS : 
 // in case of arrays loops basically helps you to iterate through each and every element.
 // map, reduce, filter
 
 
 //Question : double all the elements of the array
-let arr = [1, 2, 3, 4, 5]
+// let arr = [1, 2, 3, 4, 5]
 
-// for (let index = 0; index < arr.length; index++) {
-//     console.log(arr[index] * 2);
-// }
+// // for (let index = 0; index < arr.length; index++) {
+// //     console.log(arr[index] * 2);
+// // }
 
-// map function iterates through each element of the array, and do the required operation, then returns a new array.
-const newArr = arr.map( n => n * 2 );
-console.log(newArr);
+// // map function iterates through each element of the array, and do the required operation, then returns a new array.
+// const newArr = arr.map( n => n * 2 );
+// console.log(newArr);
+
+

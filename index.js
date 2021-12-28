@@ -95,9 +95,9 @@ var arr = [ 2,  4,  6];
 
 // => ::::  arrow function
 
-const value = arr.some(n => n%2 == 0);
-const value2 = arr.every(n => n%2 == 0);
-console.log(value, value2);
+// const value = arr.some(n => n%2 == 0);
+// const value2 = arr.every(n => n%2 == 0);
+// console.log(value, value2);
 
 
 //regular 
@@ -149,4 +149,34 @@ console.log(value, value2);
 // const newArr = arr.map( n => n * 2 );
 // console.log(newArr);
 
+
+// map : helps you to manipulate all the items in an array
+// reduce : helps you to use all the items and return a single value
+// filter : applies a condition on all the elements, return you new array.
+
+
+var salary = [5000, 6000, 7000, 3000, 4000];
+
+//  filter out salaries which is greater than 3000.
+
+// var newSalary1 = salary.filter(x => x > 3000);
+// console.log("after filter",newSalary1);
+
+
+// // double the salary of all emp whose salary is greater than 3000
+
+// var newSalary2 = newSalary1.map(y => y * 2);
+// console.log("after map",newSalary2);
+
+
+// const newSalary = salary.filter(function (x){
+//     return x > 3000
+// }).map(x => x * 2);
+
+const newSalary = salary.filter(x => x > 3000).map(x => x * 2);
+
+console.log(newSalary);
+
+
+// reduce function 
 

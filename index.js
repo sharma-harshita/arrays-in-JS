@@ -179,4 +179,17 @@ console.log(newSalary);
 
 
 // reduce function 
+// find out the some of all the salaries that we have to pay to the employees.
 
+// sum = accumulator
+// x = current value
+// 0 = initial value of sum variable
+
+const total =  newSalary.reduce((sum, x) => sum = sum + x , 0)
+console.log(total);
+
+// const  a = [1, 3, 4];
+// const sum = 0;
+// for (let index = 0; index < a.length; index++) {
+//     sum = sum + a[index];
+// }

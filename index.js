@@ -173,9 +173,9 @@ var salary = [5000, 6000, 7000, 3000, 4000];
 //     return x > 3000
 // }).map(x => x * 2);
 
-const newSalary = salary.filter(x => x > 3000).map(x => x * 2);
+// const newSalary = salary.filter(x => x > 3000).map(x => x * 2);
 
-console.log(newSalary);
+// console.log(newSalary);
 
 
 // reduce function 
@@ -185,11 +185,62 @@ console.log(newSalary);
 // x = current value
 // 0 = initial value of sum variable
 
-const total =  newSalary.reduce((sum, x) => sum = sum + x , 0)
-console.log(total);
+// const total =  newSalary.reduce((sum, x) => sum = sum + x , 0)
+// console.log(total);
 
 // const  a = [1, 3, 4];
 // const sum = 0;
 // for (let index = 0; index < a.length; index++) {
 //     sum = sum + a[index];
 // }
+
+
+
+
+
+
+// const num = [2, 4, 6, 8, 10];
+
+// var sum = 0;
+
+// for(let i =0 ; i < num.length ; i++){
+//     const a = num [i];
+//     sum = sum + a;
+// }
+
+// console.log(sum);
+
+// const total = num.reduce( (sum ,a) => sum = sum + a, 0)
+
+ 
+
+
+// const arr = [2, 4, 6, 8, 10];
+const str = "Harsh";
+// const obj = 
+
+// console.log(num);
+// for in , for of 
+
+
+// for - in loop : returns you the indexes of the array
+// for - of loop : returns you the values of the array
+
+//indexes of the array
+// for (const a in num) {
+//     console.log(a);
+// }
+
+// //values of the array
+// for (const a of num) {
+//     console.log(a);
+// }
+
+
+salary.forEach(element =>{
+    console.log(element)
+});
+
+// diff between map and foreach is that . 
+//  Map returns a new array , whereas foreach updates the same array only.
+

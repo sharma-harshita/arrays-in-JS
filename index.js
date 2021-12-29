@@ -237,10 +237,28 @@ const str = "Harsh";
 // }
 
 
-salary.forEach(element =>{
-    console.log(element)
+// const users = 
+
+console.log("Before",salary);
+
+const newAr = salary.map(element => element+2000);
+
+const a = salary.forEach((element, index)=>{
+    if (element > 4000) {
+        return element + 10
+    }
 });
+
+console.log("After",salary, newAr, a);
 
 // diff between map and foreach is that . 
 //  Map returns a new array , whereas foreach updates the same array only.
 
+
+
+
+
+var arr = [];    // array literals
+var arr = new Array(1, 2, 4, 2);  // constructor function
+
+//
